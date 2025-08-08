@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staxel - Lesser Than Better Start Mod</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Import the Inter font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .card, .changelog-card {
+            background-color: #2d3748;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    
+    <!-- Navbar will be loaded here by index.js -->
+    <div id="navbar-container"></div>
+
+    <div class="container mx-auto mt-16 mb-20">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-blue-400 mb-4">Staxel - Lesser Than Better Start Mod</h1>
+            <p class="text-lg text-gray-300">A quality-of-life mod for the game Staxel, created by Gaming on Insulin.</p>
+        </header>
+
+        <!-- Mod Description Section -->
+        <section class="card p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-bold text-gray-200 mb-4">About the Mod</h2>
+            <p class="text-gray-300">
+                This mod is designed to enhance the early game experience in Staxel by adjusting various settings and adding new features to help players get started more smoothly. It's perfect for both new and returning players who want to jump into the action without the initial grind.
+            </p>
+        </section>
+
+        <!-- Changelog Section -->
+        <section class="changelog-card p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-200 mb-6">Mod Changelog</h2>
+            <div class="space-y-4">
+                <!-- V1.0.2 -->
+                <div class="changelog-card p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold">V1.0.2</h2>
+                        <span class="text-sm text-gray-400">6 aug 2025</span>
+                    </div>
+                    <div class="border-t border-gray-600 pt-4">
+                        <h3 class="text-lg font-semibold text-yellow-400 mb-2">♻️ Changed</h3>
+                        <ul class="list-disc list-inside space-y-1 pl-4">
+                            <li>Fixed a typo in the lang file. Hopefully it's fixed!</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- V1.0.1 -->
+                <div class="changelog-card p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold">V1.0.1</h2>
+                        <span class="text-sm text-gray-400">6 aug 2025</span>
+                    </div>
+                    <div class="border-t border-gray-600 pt-4">
+                        <h3 class="text-lg font-semibold text-yellow-400 mb-2">♻️ Changed</h3>
+                        <ul class="list-disc list-inside space-y-1 pl-4">
+                            <li>Changed typos again, but failed.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- V1.0.0 -->
+                <div class="changelog-card p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold">V1.0.0</h2>
+                        <span class="text-sm text-gray-400">9 mei 2025</span>
+                    </div>
+                    <div class="border-t border-gray-600 pt-4">
+                        <h3 class="text-lg font-semibold text-cyan-400 mb-2">🚀 Initial Release</h3>
+                        <ul class="list-disc list-inside space-y-1 pl-4">
+                            <li>Initial release.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer will be loaded here by index.js -->
+    <div id="footer-container"></div>
+    
+    <!-- Script to load external components -->
+    <script src="./static/js/index.js"></script>
+</body>
+</html>

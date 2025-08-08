@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Changelog</title>
+    <title>Gaming on Insulin</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -18,157 +18,54 @@
         .container {
             max-width: 800px;
         }
-        .changelog-card {
+        .card {
             background-color: #2d3748;
         }
     </style>
 </head>
 <body class="p-4 md:p-8">
-    <div class="container mx-auto">
-        <!-- Roadmap Header -->
-        <header class="mb-8">
-            <h1 class="text-4xl font-bold text-center mb-2">🗺️ Roadmap</h1>
-            <p class="text-center text-gray-400">What we're working on next.</p>
+    
+    <!-- Navbar will be loaded here by index.js -->
+    <div id="navbar-container"></div>
+    
+    <div class="container mx-auto mt-16 mb-20">
+        <header class="text-center mb-12">
+            <h1 class="text-5xl font-bold text-blue-400 mb-4">Gaming on Insulin</h1>
+            <p class="text-lg text-gray-300">I make mods for fun. This is a place to track my projects and share ideas.</p>
         </header>
 
-        <!-- Roadmap Section -->
-        <div class="changelog-card p-6 rounded-xl shadow-lg mb-8">
-            <div class="border-t border-gray-600 pt-4">
-                <p class="text-gray-300">These features are planned for future updates, in no particular order.</p>
-                <ul class="list-disc list-inside space-y-1 pl-4 mt-2">
-                    <li>Medical bed (adult and child), bed sheets, and pillows.</li>
-                    <li>Medical hand sanitizer, gloves, and more medication.</li>
-                    <li>Medical curtains, wheelchairs, and walking equipment.</li>
-                    <li>Medical operation tools and general supplies.</li>
-                    <li>Bandages, gauze, medical tape, and thermometers.</li>
-                    <li>Blood pressure monitors, sterile saline solution, and surgical masks.</li>
-                    <li>Disinfectant sprays and wipes, syringes, needles, and medical scissors.</li>
-                    <li>Tongue depressors and stethoscopes.</li>
-                    <li>Pain relievers (Ibuprofen, aspirin), antacids, and antihistamines.</li>
-                    <li>Cough drops, cough syrup, anti-diarrhea medication, and cold/flu remedies.</li>
-                    <li>Topical antibiotic ointments and wound care creams.</li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Main Changelog Header -->
-        <header class="mb-8">
-            <h1 class="text-4xl font-bold text-center mb-2">Changelog</h1>
-            <p class="text-center text-gray-400">All significant changes and updates will be listed here.</p>
-        </header>
+        <!-- About Section -->
+        <section class="card p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-bold text-gray-200 mb-4">About Me</h2>
+            <p class="text-gray-300">
+                Hi, I'm Gaming on Insulin! I'm a passionate gamer who also enjoys creating mods for various games in my spare time. This site serves as a central hub for my projects and a place for the community to provide feedback and suggestions.
+            </p>
+        </section>
 
-        <!-- Changelog Section -->
-        <div class="space-y-8">
-            <!-- V1.3.0 -->
-            <div class="changelog-card p-6 rounded-xl shadow-lg">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold">V1.3.0</h2>
-                    <span class="text-sm text-gray-400">08-08-2025</span>
+        <!-- Suggestion Form Section -->
+        <section class="card p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-gray-200 mb-4">Leave a Suggestion</h2>
+            <p class="text-gray-400 mb-6">Have an idea for a new mod or a feature for an existing one? Let me know!</p>
+            <form action="mailto:gamingoninsulin@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-gray-300 font-medium mb-1">Your Name (optional)</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
                 </div>
-                <div class="border-t border-gray-600 pt-4">
-                    <h3 class="text-lg font-semibold text-green-400 mb-2">✨ Added</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>Medical blankets</li>
-                        <li>Medical beds</li>
-                        <li>Medical pillows</li>
-                    </ul>
+                <div>
+                    <label for="mod_suggestion" class="block text-gray-300 font-medium mb-1">Your Suggestion</label>
+                    <textarea id="mod_suggestion" name="mod_suggestion" rows="4" class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
                 </div>
-            </div>
-
-            <!-- V1.2.2 -->
-            <div class="changelog-card p-6 rounded-xl shadow-lg">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold">V1.2.2</h2>
-                    <span class="text-sm text-gray-400">08-08-2025</span>
-                </div>
-                <div class="border-t border-gray-600 pt-4">
-                    <h3 class="text-lg font-semibold text-yellow-400 mb-2">♻️ Changed</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>Fixed **CHANGELOG.txt** where the latest changes were missing.</li>
-                        <li>Added **LICENSE.txt** (GNU General Public License v3).</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- V1.2.1 -->
-            <div class="changelog-card p-6 rounded-xl shadow-lg">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold">V1.2.1</h2>
-                    <span class="text-sm text-gray-400">08-08-2025</span>
-                </div>
-                <div class="border-t border-gray-600 pt-4">
-                    <h3 class="text-lg font-semibold text-green-400 mb-2">✨ Added</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>Added **CHANGELOG.txt** to the mod files.</li>
-                    </ul>
-                    <h3 class="text-lg font-semibold text-blue-400 mt-4 mb-2">🔮 Future Coming</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>**LICENSE.txt** (GNU General Public License v3)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- V1.2 -->
-            <div class="changelog-card p-6 rounded-xl shadow-lg">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold">V1.2</h2>
-                    <span class="text-sm text-gray-400">08-08-2025</span>
-                </div>
-                <div class="border-t border-gray-600 pt-4">
-                    <h3 class="text-lg font-semibold text-green-400 mb-2">✨ Added</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>Medical soap (fixed issues with items being in the wrong place or cut off).</li>
-                        <li>Medical medkit (fixed issues with items being in the wrong place or cut off).</li>
-                    </ul>
-                    <h3 class="text-lg font-semibold text-yellow-400 mt-4 mb-2">♻️ Changed</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>All filenames changed from `meds` to `medical`.</li>
-                        <li>Old `meds` shelf and related items have been updated.</li>
-                        <li>**Anitbiotics 500mg**</li>
-                        <li>**Insulin 10ml**</li>
-                        <li>**Paracetamol 1000mg**</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- V1.1 -->
-            <div class="changelog-card p-6 rounded-xl shadow-lg">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold">V1.1</h2>
-                    <span class="text-sm text-gray-400">21-03-2024</span>
-                </div>
-                <div class="border-t border-gray-600 pt-4">
-                    <h3 class="text-lg font-semibold text-red-400 mb-2">⚖️ Balancing</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>Changed shelf items: Subtype 5, Display Type 7, Base Demand 60, etc.</li>
-                        <li>Changed fridge items: Subtype 5, Display Type 2, Depletion Rate 25, etc.</li>
-                        <li>Removed the "fridge or shelf" option.</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <!-- V1.0 -->
-            <div class="changelog-card p-6 rounded-xl shadow-lg">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold">V1.0</h2>
-                    <span class="text-sm text-gray-400">18-03-2024</span>
-                </div>
-                <div class="border-t border-gray-600 pt-4">
-                    <h3 class="text-lg font-semibold text-cyan-400 mb-2">🚀 Initial Release</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>Added shelf items with initial values.</li>
-                        <li>Added fridge items with initial values.</li>
-                        <li>Added shelf or fridge items with initial values.</li>
-                    </ul>
-                    <h3 class="text-lg font-semibold text-gray-400 mt-4 mb-2">📋 Type Definitions</h3>
-                    <ul class="list-disc list-inside space-y-1 pl-4">
-                        <li>**SUBTYPE(S):** 2-Food, 3-Beverages, ..., 14-Toys and Games.</li>
-                        <li>**DISPLAYTYPE(S):** 1-Food shelf, 2-Fridge only, ..., 7-Non-food shelf.</li>
-                        <li>**QUALITY DISTRIBUTIONS(S):** 0-no specialization, 1-standard, ..., 6-only specialty.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+                <button type="submit" class="w-full py-3 px-6 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                    Submit Suggestion
+                </button>
+            </form>
+        </section>
     </div>
+
+    <!-- Footer will be loaded here by index.js -->
+    <div id="footer-container"></div>
+    
+    <!-- Script to load external components -->
+    <script src="./static/js/index.js"></script>
 </body>
 </html>

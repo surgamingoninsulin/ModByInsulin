@@ -1,0 +1,21 @@
+<!-- This file contains the navigation bar for the website. It is designed to be injected dynamically. -->
+<nav class="fixed top-0 left-0 right-0 bg-gray-900 shadow-lg z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="../index.html" class="text-xl font-bold text-white hover:text-blue-400 transition-colors duration-200">Home</a>
+        <div class="relative group">
+            <button class="text-sm font-medium text-gray-300 hover:text-blue-400 transition-colors duration-200 focus:outline-none">
+                Mods <span class="ml-1">&#9660;</span>
+            </button>
+            <div id="dropdown-menu" class="absolute right-0 top-full pt-2 w-64 bg-gray-800 rounded-md shadow-lg py-1 z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-200 invisible group-hover:visible">
+                <!-- Another Brick In The Mall sub-category -->
+                <div class="px-4 py-2 text-sm font-semibold text-gray-400">Another Brick In The Mall
+                    <a href="../[ABITM] Pharmacy - changelog and features.html" class="block pl-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-blue-400">Pharmacy Mod</a>
+                </div>
+                <!-- Staxel sub-category -->
+                <div class="px-4 py-2 text-sm font-semibold text-gray-400">Staxel
+                    <a href="../[STAXEL] Lesser Than Better Start Mod - changelog and features.html" class="block pl-6 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-blue-400">Lesser Than Better Start Mod</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
